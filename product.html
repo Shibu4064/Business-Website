@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/bsstyle2.css" type="text/css"/>
+
+    <title>Single Product Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="//ae01.alicdn.com/images/eng/wholesale/icon/aliexpress.ico">
+  </head>
+  <body>
+    <!-- top banner starts -->
+        <section>
+            <div class="container-fluid g-0">
+               <a href="#"><img src="Image/topbanner.webp" class="top-banner"/></a> 
+            </div>
+        </section>
+    <!-- top banner ends -->
+
+    <!-- mini nav starts -->
+        <section>
+            <div class="container-fluid mini-nav-container d-none d-md-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navbar navbar-expand-lg mini-navbar">
+                                  <ul class="navbar-nav ms-auto me-0">
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Sell on Ali express |
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <li><a class="dropdown-item" href="#">Seller Login</a></li>
+                                          <li><a class="dropdown-item" href="#">Non Chinese Seller Registration</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Help
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <li><a class="dropdown-item" href="#">Customer Service</a></li>
+                                          <li><a class="dropdown-item" href="#">Disputes and reports</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li><a class="dropdown-item" href="#">Report IPR Infringement</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">Buyer Protection</a>
+                                          </li>
+                                          <div class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fas fa-mobile"></i> App |</a>
+                                          </div>
+                                          <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="Image/rsz_bdflag.jpg" class="bd-flag"/> / English/USD
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                              <div class="country-currency">
+                                                  <label>
+                                                      Ship to 
+                                                      <select class="form-select custom-form-select form-select-sm">
+                                                          <option>Bangladesh</option>
+                                                          <option>USA</option>
+                                                          <option>Franch</option>
+                                                          <option>Spain</option>
+                                                          <option>China</option>
+                                                          </select>
+                                                  </label>
+                                                  <label>
+                                                    Language
+                                                    <select class="form-select custom-form-select form-select-sm">
+                                                        <option>Bangla</option>
+                                                        <option>English</option>
+                                                        <option>French</option>
+                                                        <option>Spanish</option>
+                                                        <option>Mandarine</option>
+                                                        </select>
+                                                </label>
+                                                <label>
+                                                    Currency 
+                                                    <select class="form-select custom-form-select form-select-sm">
+                                                        <option>BDT</option>
+                                                        <option>USD</option>
+                                                        <option>EURO</option>
+                                                        <option>POUND</option>
+                                                        <option>YUAN</option>
+                                                        </select>
+                                                </label>
+                                                <div class="d-grid">
+                                                    <button class="btn btn-join">Save</button>
+                                                </div>
+                                              </div>
+                                            </ul>
+                                          </li>
+                                          
+                                          <div class="nav-item">
+                                              <a class="nav-link" href="#"><i class="fas fa-heart"></i> Wish List</a>
+                                          </div>
+                                          <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fas fa-users"></i> Account
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                             <div class="mini-nav-account">
+                                                 <p>Welcome to IT Future Shop</p>
+                                                 <button class="btn btn-join">Join</button>
+                                                 <button class="btn btn-sign-in">Sign In</button>
+                                                 <div class="account-links">
+                                                     <a href="#">My Orders</a>
+                                                     <a href="#">Message Center</a>
+                                                     <a href="#">Wish List</a>
+                                                     <a href="#">My Favourite Stores</a>
+                                                     <a href="#">My Coupons</a>
+                                                 </div>
+                                             </div>
+                                            </ul>
+                                          </li>
+                                     </ul>
+                                </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+    <!-- mini nav ends -->
+
+    <!-- logo srea starts -->
+        <section>
+          <div class="container-fluid bg-white py-4">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-md-3 text-center text-md-start">
+                       <a href="bsproject2.html" target="_blank"><img src="Image/logo.png" class="logo" alt="logo"/></a>
+                       <p class="logo-text">Smarter Shopping,Better Living</p>
+                   </div>
+                   <div class="col-md-7">
+                       <div class="search-area">
+                         <div class="input-group">
+                          <input type="search" class="form-control search-input" placeholder="Search"/>
+                          <select class="form-select input-group-text custom-search">
+                            <option>Food</option>
+                            <option>Electronics</option>
+                            <option>Dress</option>
+                            <option>Furniture</option>
+                          </select>
+                          <span class="input-group-text search-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                         </div>
+                       </div>
+                       <div class="search-bottom-text">
+                         <a href="#">Mobile Phones</a>
+                         <a href="#">Luxury Phone Case</a>
+                         <a href="#">Samsung s21 Plus Case</a>
+                         <a href="#">Iphone 12</a>
+                         <a href="#">Xiaomi 9s 128GB</a>
+                         <a href="#">Weed Storage Bag</a>
+                       </div>
+                   </div>
+                   <div class="col-md-2 mt-3 mt-md-0">
+                     <div class="cart-area">
+                      <button class="btn btn-light position-relative">
+                        <i class="fas fa-cart-plus"></i>
+                      <span class="position-absolute top-0 start-100 translate-middle text-danger cart-item">
+                        <small>0</small>
+                      </span>
+                      </button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+          </div>
+        </section>
+    <!-- logo area ends -->
+
+    <!-- single product starts -->
+    <section>
+      <div class="container my-5 bg-white p-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="big-image">
+                 <img src="Image/Products/p1.webp" id="big_image" class="img-fluid" alt="single image"/>
+                </div>
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                     <img src="Image/Products/p2.webp" class="img-fluid"/>
+                     </div>
+                     <div class="gallery-item">
+                    <img src="Image/Products/p3.webp" class="img-fluid"/>
+                    </div>
+                    <div class="gallery-item">
+                     <img src="Image/Products/p4.webp" class="img-fluid"/>
+                    </div>
+                    <div class="gallery-item">
+                     <img src="Image/Products/p5.webp" class="img-fluid"/>
+                    </div>
+                    <div class="gallery-item">
+                     <img src="Image/Products/p6.webp" class="img-fluid"/>
+                    </div>
+                    <div class="gallery-item">
+                     <img src="Image/Products/p7.webp" class="img-fluid"/>
+                    </div>
+                    <div class="gallery-item">
+                     <img src="Image/Products/p8.webp" class="img-fluid"/>
+                    </div>
+                    <div class="gallery-item">
+                     <img src="Image/Products/p9.webp" class="img-fluid"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                 <div class="title">
+                     <p>Used Unlocked Apple iPhone 12 Pro 5G Smartphone 6.1" XDR Display A14 Chipset 12MP Triple Camera Face ID IOS 14 Mobile Phones</p>
+                 </div>
+                 <div class="review my-4">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <span class="total-rating"> 4.5 <i class="fas fa-chevron-down"></i>10 review 15 order
+                     </span>
+                 </div>
+                 <div class="price my-3">
+                     <h3>BDT 133,574.20</h3>
+                     <p><del>BDT 193,585.81</del>        <button class="btn btn-danger btn-sm">-31%</button></p>
+                 </div>
+                 <div class="coupon">
+                     <span>
+                         BDT 252.54 Coupon for you
+                     </span>
+
+                     <a href="">Get Coupons</a>
+                 </div>
+                 <div class="variation my-3">
+                     <p class="variation-name">Condition: New</p>
+                     <div class="variation-details">
+                         <button class="btn btn-outline-warning btn-sm">New</button>
+                         <button class="btn btn-outline-warning btn-sm">Used</button>
+                         <button class="btn btn-outline-warning btn-sm">Almost New</button>
+                     </div>
+                 </div>
+                 <div class="variation my-3">
+                     <p class="variation-name">Bundle :CN Model</p>
+                     <div class="variation-details">
+                         <button class="btn btn-outline-info btn-sm">US Version</button>
+                         <button class="btn btn-outline-info btn-sm">CN Version</button>
+                         <button class="btn btn-outline-info btn-sm">TI Version</button>
+                     </div>
+                 </div>
+                 <div class="variation my-3">
+                     <p class="variation-name">Color :Golden</p>
+                     <div class="variation-details variation-details-color">
+                         <img src="Image/Products/sm9.webp" class="img-fluid"/>
+                         <img src="Image/Products/sm1.webp" class="img-fluid"/>
+                         <img src="Image/Products/sm2.webp" class="img-fluid"/>
+                         <img src="Image/Products/sm3.webp" class="img-fluid"/>
+                         <img src="Image/Products/sm4.webp" class="img-fluid"/>
+                         <img src="Image/Products/sm5.webp" class="img-fluid"/>
+                         <img src="Image/Products/sm6.webp" class="img-fluid"/>
+                         <img src="Image/Products/sm7.webp" class="img-fluid"/>
+                         <img src="Image/Products/sm8.webp" class="img-fluid"/>
+                     </div>
+                 </div>
+                 <div class="quantity my-3">
+                     <p class="variation-name">Quantity : 1</p>
+                     <div class="quantity-input">
+                       <button class="btn btn-outline-warning btn-sm">-</button>
+                       <input type="number" class="form-control form-control-sm w-25" name="quantity"/>
+                       <button class="btn btn-outline-info btn-sm">+</button>
+                     </div>
+                 </div>
+                 <div class="shipping my-3">
+                     <p class="variation-name">shipping: 15USD</p>
+                     <p> Shipped to Bangladesh</p>
+                 </div>
+                 <div class="cart-button">
+                     <button class="btn btn-danger">Buy Now</button>
+                     <button class="btn btn-warning">Add to cart</button>
+                     <button class="btn btn-outline-danger"><i class="fas fa-heart"></i> 95</button>
+                 </div>
+                 <div class="buyer-protection my-3">
+                     <div class="row">
+                         <div class="col-1">
+                             <i class="fas fa-shield-alt"></i>
+                         </div>
+                         <div class="col-11">
+                             <h6>75-day Buyer Protection</h6>
+                             <p><small>Money Back Gurantee</small></p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="col-md-2 bg-white">
+             <h5 class="text-center my-4">Recommended</h5>
+               <div class="right-sidebar-content">
+                 <img src="Image/p12.webp" class="img-fluid"/>
+                 <h6>8658BDT</h6>
+                 <h5>Product Title</h5>
+               </div>
+               <div class="right-sidebar-content">
+                 <img src="Image/p13.webp" class="img-fluid"/>
+                 <h6>8658BDT</h6>
+                 <h5>Product Title</h5>
+               </div>
+               <div class="right-sidebar-content">
+                 <img src="Image/p12.webp" class="img-fluid"/>
+                 <h6>8658BDT</h6>
+                 <h5>Product Title</h5>
+               </div>
+               <div class="right-sidebar-content">
+                 <img src="Image/p13.webp" class="img-fluid"/>
+                 <h6>8658BDT</h6>
+                 <h5>Product Title</h5>
+               </div>
+             </div>
+        </div>
+    </div>
+    </section>
+   <!-- single products ends -->
+
+   <!-- multi products starts -->
+     <section>
+       <div class="container my-5">
+         <div class="row">
+           <div class="col-md-2">
+             <div class="product-category bg-white px-3 py-4">
+              <h6>Store Categories</h6><br>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Charger Series
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="">Wireless Charger</a>
+                      <a href="">Wall Charger</a>
+                      <a href="">Car Charger</a>
+                      <a href="">Gas Charger</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Phone Case
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="">iphone 12 pro max</a>
+                      <a href="">One PLus 9 pro</a>
+                      <a href="">Motorola One g9 plus</a>  
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Screen Protector
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="">Gorrila Glass</a>
+                      <a href="">Corning Glass</a>
+                      <a href="">5D Glass</a>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+           </div>
+           <div class="col-md-10 bg-white p-4">
+            <ul class="nav nav-tabs">
+              <li class="nav-item my-nav-item">
+                  <button data-id="#home" class="nav-link active" data-toggle="tab">Overviews</button>
+              </li>
+              <li class="nav-item my-nav-item">
+                  <button data-id="#profile" class="nav-link" data-toggle="tab">Customer Reviews</button>
+              </li>
+              <li class="nav-item my-nav-item">
+                  <button data-id="#messages" class="nav-link" data-toggle="tab">Specifications</button>
+              </li>
+          </ul>
+          <div class="content mt-5">
+              <div class="custom-tab-panel" id="home" style="display: block">
+                <h6 class="mb-4">Product Overview</h6>
+                <img src="Image/Products/iphone.webp" class="img-fluid" alt="overview"/>
+                <div class="my-5">
+                  <p>Features</p>
+                  <p>
+                    1. Please be informed that this is a used mobile phone, not a brand-new product.<br>
+
+                    2. All products are subject to rigorous and comprehensive testing before they are shipped out. We guarantee all functions and have a battery capacity of more than 85%.<br>
+                    
+                    3. Used mobile phones will have traces of use and possible defects, we do not accept disputes caused by such reasons.<br>
+                    
+                    4. To protect your interests, be sure to read all the contents of this page in detail-especially the "Important Notices" at the bottom of this page. <br>
+                    
+                    5.If you do not understand, please consult our customer service. By purchasing this product, you agree to all the terms of this store and this page, and you agree that we have the final interpretation of all content on this page. <br>
+                    
+                    6.If you do not agree to the terms of this page, please do not purchase this product.<br>
+                    
+                    7.The price is not include tax and VAT, if the custom house charges the tax and VAT, you need to pay them. But if you request, we will declare it low value.
+                  </p>
+                </div>
+              </div>
+              <div class="custom-tab-panel" id="profile" style="display: none">
+                <h6 class="mb-4">Customer Reviews (1397)</h6>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="review-product">
+                        <div class="row">
+                          <div class="col-3">
+                            5 Stars
+                          </div>
+                          <div class="col-6">
+                             <div class="bar">
+                               <div class="bar-overly" style="width: 90%;"></div>
+                             </div>
+                          </div>
+                          <div class="col-3">
+                            <button class="btn btn-outline-warning btn-sm">94%</button>
+                          </div>
+                        </div>
+                        <div class="row">
+                         <div class="col-3">
+                           4 Stars
+                         </div>
+                         <div class="col-6">
+                            <div class="bar">
+                              <div class="bar-overly" style="width: 90%;"></div>
+                            </div>
+                         </div>
+                         <div class="col-3">
+                           <button class="btn btn-outline-warning btn-sm">94%</button>
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-3">
+                           3 Stars
+                         </div>
+                         <div class="col-6">
+                            <div class="bar">
+                              <div class="bar-overly" style="width: 90%;"></div>
+                            </div>
+                         </div>
+                         <div class="col-3">
+                           <button class="btn btn-outline-warning btn-sm">80%</button>
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-3">
+                           2 Stars
+                         </div>
+                         <div class="col-6">
+                            <div class="bar">
+                              <div class="bar-overly" style="width: 90%;"></div>
+                            </div>
+                         </div>
+                         <div class="col-3">
+                           <button class="btn btn-outline-warning btn-sm">65%</button>
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-3">
+                           1 Stars
+                         </div>
+                         <div class="col-6">
+                            <div class="bar">
+                              <div class="bar-overly" style="width: 90%;"></div>
+                            </div>
+                         </div>
+                         <div class="col-3">
+                           <button class="btn btn-outline-warning btn-sm">50%</button>
+                         </div>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="review my-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="total-rating">
+                          4.5 | 10 review 15 order
+                        </span>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="custom-tab-panel" id="messages" style="display: none">
+                <ul class="product-specs-list util-clearfix">
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Brand Name:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="APPLE">APPLE</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Apple Model:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="IPhone 12 Pro">IPhone 12 Pro</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Battery Type:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Not Detachable">Not Detachable</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">ROM:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="128G">128G</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Charging Power:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="18W">18W</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Origin:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="CN(Origin)">CN(Origin)</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Item Condition:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Used">Used</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Operation System:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="ios">ios</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Biometrics Technology:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Face Recognition">Face Recognition</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Front Camera Quantity:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="1">1</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Rear Camera Pixel:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="12MP">12MP</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Battery Capacity(mAh):&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="2775">2775</span>
+                </li>
+                <li class="product-prop line-limit-length" data-spm-anchor-id="a2g0o.detail.0.i8.4711a460SP1tfh">
+                    <span class="property-title">Touch Screen:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Yes">Yes</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Fast Charging:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="USB-PD">USB-PD</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="english">english</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Russian">Russian</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="German">German</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="French">French</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Spanish">Spanish</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="POLISH">POLISH</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Portuguese">Portuguese</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Italian">Italian</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Turkish">Turkish</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Norwegian">Norwegian</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Korean">Korean</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Japanese">Japanese</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Language:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Arabic">Arabic</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Display Resolution:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="2532x1170">2532x1170</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">RAM:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="6G">6G</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Rear Camera Quantity:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="3">3</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Certification:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="CE">CE</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Charging Interface Type:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Linghting">Linghting</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Front Camera Pixel:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="10MP">10MP</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Wireless Charging:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Yes">Yes</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Design:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="BAR">BAR</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">SIM Card Quantity:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="1 SIM Card">1 SIM Card</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Display Size:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="6.1">6.1</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">3.5mm Headphone Port:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="No">No</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Screen Type:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Full Screen">Full Screen</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">CPU Model:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="APPLE">APPLE</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Apple Model:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="A14 Bionic">A14 Bionic</span>
+                </li>
+                <li class="product-prop line-limit-length">
+                    <span class="property-title">Bluetooth Version:&nbsp;</span>
+                    <span class="property-desc line-limit-length" title="Bluetooth 5.1">Bluetooth 5.1</span>
+                </li>
+            </ul>
+              </div>
+          </div>
+           </div>
+         </div>
+       </div>
+     </section>
+   <!-- multi products ends -->
+
+   <!-- footer section starts -->
+      <section>
+        <div class="container bg-white my-5 p-5">
+          <div class="row">
+            <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
+              <div class="footer-social-link">
+                <h5>Stay Connected</h5><br>
+               <a href=""><i class="fab fa-facebook-square"></i></a>
+               <a href=""><i class="fab fa-instagram-square"></i></a>
+               <a href=""><i class="fab fa-twitter-square"></i></a>
+               <a href=""><i class="fab fa-linkedin"></i></a>
+               <a href=""><i class="fab fa-whatsapp-square"></i></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-link">
+                  <h5>Shopping with us</h5>
+                  <a href="">Making Payments</a>
+                  <a href="">Delivery Options</a>
+                  <a href="">Buyer Protection</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-link">
+                <h5>Customer Service</h5>
+                <a href="">Customer Care</a>
+                <a href="">Transaction Services Agreement</a>
+                <a href="">Take Our Feedback Survey</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-link">
+                <h5>Collaborate With Us</h5>
+                <a href="">Partnership</a>
+                <a href="">Affiliate Programs</a>
+                <a href="">Buyer Protection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container my-5 p-5 bg-white">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="footer-information">
+                <h5>Help</h5>
+                <p>Customer Service, Disputes & Reports, Buyer Protection, Report IPR infringement </p>
+               </div>
+               </div>
+               <div class="col-md-6">
+                <div class="footer-information">
+                  <h5>Browse by Category</h5>
+                  <p>All Popular, Product, Promotion, Low Price, Great Value, Reviews, Blog, Seller Portal, BLACK FRIDAY, AliExpress Assistant </p>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer-information">
+                  <h5>AliEXpress Multi-Language Sites</h5>
+                  <p>Russian, Portuguese, Spanish, French, German, Italian, Dutch, Turkish, Japanese, Korean, Thai, Vietnamese, Arabic, Hebrew, Polish</p>
+                 </div>
+                 </div>
+                 <div class="col-md-6 mt-4 mt-md-0">
+                  <div class="footer-information">
+                    <h5>AliExpress Group</h5>
+                    <p>Alibaba Group Website, AliExpress, Alimama, Alipay, Fliggy, Alibaba Cloud, Alibaba International, AliTelecom, DingTalk, Juhuasuan, Taobao Marketplace, Tmall, Xiami, AliOS, 1688</p>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="sf-download-app">
+                <a class="android-link" href="https://play.google.com/store/apps/details?id=com.alibaba.aliexpresshd" ref="nofollow" target="_blank"><i class="fab fa-google-play"></i>  Google Play</a>
+                <a class="iphone-link" href="https://itunes.apple.com/us/app/aliexpress/id436672029" ref="nofollow" target="_blank"><i class="fab fa-apple"></i>   AppStore</a>
+              </div>
+            </div>
+        </div>
+      </section>
+   <!-- footer section ends -->
+
+   <!-- copyright starts -->
+       <section>
+       <div class="container-fluid bg-dark bg-gradient">
+         <div class="container last-container">
+           <div class="row">
+             <div class="col-md-6 text-center text-md-start">
+               <p>Copyright @ 2021 | IT FUTURE SHOP</p>
+             </div>
+             <div class="col-md-6 text-center text-md-end">
+                <p>Design and Developed by <a href="https://github.com/Shibu4064/portfolio.github.io" target="_blank">IT FUTURE DEVELOPMENT</a></p>
+             </div>
+           </div>
+         </div>
+       </div>
+       </section>
+   <!-- copyright ends -->
+
+   <!-- Optional JavaScript; choose one of the two! -->
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+    $(document).ready(function(){
+      $('.gallery-item').on('click', function(){
+            let img = $(this) .children('img') .attr('src')
+         $('#big_image') .attr('src',img)
+         });
+      $('.image-gallery').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        //asNavFor: '.slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+       });
+   });
+   </script>
+   <script>
+     $(document).ready(function(){
+       $(".my-nav-item").on('click', function(){
+         let id = $(this).children('button').attr('data-id')
+        $(this).children('button').addClass('active')
+        $(this).siblings('.my-nav-item').children('button').removeClass('active')
+         $(id).show().siblings('.custom-tab-panel').hide()
+       });
+     });
+   </script>
+  </body>
+</html>
