@@ -556,21 +556,8 @@ button .nav-link{
     padding: 2px 4px !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width:500px){
     .info-container{
         border-right: none;
     }
 }
-
